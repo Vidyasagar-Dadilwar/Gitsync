@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitSync - Seamlessly Sync Your Code Across Platforms</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-dyN61Ds4sV5yItHpjF5IK76Y1xG1NiBXYg9b2Bfu/u7E+m8eqt5Hf9RVXzgZtq2xG0sLtpHEVYyqB82Hb6l90w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <!-- including favicon -->
+     <link rel="icon" type="image/png" href="thumbnail.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#home"><img src="./thumbnail.png" alt="GitSync Logo"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <button class="cta-button" id="nav-download-btn">Download Extension</button>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Seamlessly Sync Your Code Across Platforms</h1>
+            <p>GitSync helps you integrate and organize your coding progress across multiple platforms with just one
+                click.</p>
+            <button class="cta-button" id="hero-download-btn">Download Extension</button>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Multi-Platform Sync</h3>
+                    <p>Synchronize your code effortlessly across various development platforms.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Integration</h3>
+                    <p>Seamlessly integrate with GitHub for version control and collaboration.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Easy Setup and Use</h3>
+                    <p>Get started quickly with a user-friendly interface and simple configuration.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Link Accounts</h3>
+                    <p>Connect your development accounts to GitSync.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Choose Platforms</h3>
+                    <p>Select the platforms you want to sync your code across.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Sync Your Code</h3>
+                    <p>Click to sync and watch your code update across all platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="installation" class="installation">
+            <h2>Installation Guide</h2>
+            <ol class="installation-steps">
+                <li>
+                    <h3>Download Extension</h3>
+                    <p>Click the "Download Extension" button at the top of this page.</p>
+                </li>
+                <li>
+                    <h3>Save the File</h3>
+                    <p>Choose a location on your computer to save the downloaded file.</p>
+                </li>
+                <li>
+                    <h3>Extract the Folder</h3>
+                    <p>Unzip the downloaded file to extract the GitSync folder.</p>
+                </li>
+                <li>
+                    <h3>Open Chrome Extensions</h3>
+                    <p>In Google Chrome, navigate to chrome://extensions or click on "Manage Extensions" from the menu.
+                    </p>
+                </li>
+                <li>
+                    <h3>Enable Developer Mode</h3>
+                    <p>Toggle on the "Developer mode" switch in the top right corner of the extensions page.</p>
+                </li>
+                <li>
+                    <h3>Load the Extension</h3>
+                    <p>Click "Load unpacked" and select the extracted GitSync folder.</p>
+                </li>
+                <li>
+                    <h3>Verify Installation</h3>
+                    <p>GitSync should now appear in your list of installed extensions.</p>
+                </li>
+                <li>
+                    <h3>Pin the Extension</h3>
+                    <p>Click the puzzle piece icon in Chrome's toolbar and pin GitSync for easy access.</p>
+                </li>
+                <li>
+                    <h3>GitHub Authentication</h3>
+                    <p>Click the GitSync icon and follow the prompts to authenticate with GitHub (first-time use only).
+                    </p>
+                </li>
+                <li>
+                    <h3>Grant Permissions</h3>
+                    <p>Review and allow the necessary permissions for GitSync to function properly.</p>
+                </li>
+                <li>
+                    <h3>Link or Create Repository</h3>
+                    <p>Choose to link an existing repository or create a new one if needed.</p>
+                </li>
+                <li>
+                    <h3>Start Syncing!</h3>
+                    <p>You're all set! Enjoy seamless code synchronization across your platforms.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>                
+            <form id="form">
+                <input type="text" name="from_name" id="from_name" placeholder="Your Name" required>
+            
+                <input type="text" name="from_email" id="from_email" placeholder="Your Email" required>
+            
+                <textarea type="text" name="message" id="message" placeholder="Your Message" required></textarea>   
+                
+                <button type="submit">Send Feedback</button>
+                <!-- <input type="submit" id="button" value="Send Email"> -->
+            </form>
+        </section>
+    </main> 
+    
+    <footer>    
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="legal-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="contact-info">
+                <p>Email: support@gitsync.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget">
+        <button id="chat-toggle">Need Help?</button>
+        <div id="chat-content" class="chat-content">
+            <h3>GitSync Support</h3>
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Type your message...">
+            <button id="chat-send">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        emailjs.init('EOspTG4gw5cSdyCQm')
+    </script>
+</body>
+
+</html>
